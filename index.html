@@ -14,20 +14,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
     <!--  -->
-    <title>Hello, world!</title>
+    <title> Word Counter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: "Playwrite Norge";
+            color: white;
         }
 
         textarea {
             width: 750px;
             height: 300px;
             font-size: 20px;
-        }
+            color: black;
+        } 
 
         @media screen and (max-width: 550px) {
             textarea {
@@ -48,7 +51,7 @@
 </head>
 
 <body>
-    <h1 class="text-center fw-bold bg-primary py-2">Word Counter</h1>
+    <h1 class="text-center fw-bold bg-primary py-2 mt-4  ">Word Counter</h1>
     <center><textarea id="textbox" class="p-3 my-3"></textarea></center>
     <p class="bg-primary text-center py-2 fs-4">
         " <span id="word">0 </span> " Words And
@@ -81,4 +84,4 @@
         </script>
 </body>
 
-</html> 
+</html>
