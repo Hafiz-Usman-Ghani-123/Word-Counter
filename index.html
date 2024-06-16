@@ -23,10 +23,17 @@
             font-family: "Playwrite Norge";
         }
 
+        textarea {
+            width: 750px;
+            height: 300px;
+            font-size: 20px;
+        }
+
         @media screen and (max-width: 550px) {
             textarea {
-                width: 300px;
+                width: 280px;
                 height: 200px;
+                font-size: 15px;
             }
         }
 
@@ -34,20 +41,20 @@
             textarea {
                 width: 500px;
                 height: 300px;
+                font-size: 18px;
             }
         }
     </style>
 </head>
 
 <body>
-
-    <h1 class="text-center fw-bold bg-primary">Word Counter</h1>
-    <center><textarea id="textbox" class="p-3"></textarea></center>
-    <p class="bg-primary text-center">
-        <span id="word">0 </span> Words And
-        <span id="char">0 </span> Characters (excluding spaces)
+    <h1 class="text-center fw-bold bg-primary py-2">Word Counter</h1>
+    <center><textarea id="textbox" class="p-3 my-3"></textarea></center>
+    <p class="bg-primary text-center py-2 fs-4">
+        " <span id="word">0 </span> " Words And
+        " <span id="char">0 </span> " Characters (excluding spaces)
     </p>
-
+    <h6 class="bg-primary text-center py-1">Created By Usman Ghani</h6>
     <!-- myy scrpit  -->
     <script>
         let textbox = document.getElementById('textbox')
